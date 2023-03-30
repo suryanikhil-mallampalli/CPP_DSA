@@ -1,7 +1,7 @@
-//Rules for Tower of Hanoi
+// Rules for Tower of Hanoi
 // only one disk can move at a time
 // no larger disk above smaller
-// we cvan move only the top disk
+// we can move only the top disk
 
 //TOH(number, from tower, auxilary tower, target tower)
 #include<bits/stdc++.h>
