@@ -4,29 +4,29 @@ using namespace std;
 struct MyHash
 {
     int BUCKET;
-    list<int> *table;
+    list<int> *table;//linked list
     MyHash(int b)
     {
         BUCKET = b;
         table = new list<int>[BUCKET];
     }
-    void insert(int k)
+    void insert(int key)
     {
-        int i = k % BUCKET;
-        table[i].push_back(k);
+        int i = key % BUCKET;
+        table[i].push_back(key);
     }
-    bool search(int k)
+    bool search(int key)
     {
-        int i = k % BUCKET;
+        int i = key % BUCKET;
         for (auto x : table[i])
-           if (x == k)
+           if (x == key)
               return true;
         return false;      
     }
-    void remove(int k)
+    void remove(int key)
     {
-        int i = k % BUCKET;
-        table[i].remove(k);
+        int i = key % BUCKET;
+        table[i].remove(key);
     }
 };
 
