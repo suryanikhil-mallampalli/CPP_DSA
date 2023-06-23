@@ -15,6 +15,10 @@ int getSize(Node* root){
     else{
         return 1+getSize(root->left)+getSize(root->right);
     }
+
+    // O(N) Time Complexity
+    // O(H) Space Complexity
+
 }
 int main(){
     return 0;
