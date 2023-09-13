@@ -21,4 +21,10 @@ int main() {
     for(auto i:m){
         cout<<i.first<<" "<<i.second<<endl;
     }
+
+    // thorugh iterators
+    auto it = m.find(2);
+    for(auto i = it;i!=m.end();i++){
+        cout<<(*i).second<<endl;
+    }
 }
