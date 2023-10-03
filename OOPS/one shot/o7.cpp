@@ -1,4 +1,4 @@
-// Destructo r
+// Destructor
 #include<bits/stdc++.h>
 using namespace std;
 
